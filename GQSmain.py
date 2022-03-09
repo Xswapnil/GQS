@@ -436,7 +436,7 @@ def run_steps(data):
     print(out_res1)
     print(out_res2)
 
-def run_LD(data):
+def run_LD(data,chrm):
     stat = create_config('gqs_config')
     data, data_exc1 = cal_ld(stat[args.refG + '_loc'] + '/', stat['plink_loc'] + '/', chrm, data)
     if data.shape[0] < nth:
@@ -463,10 +463,10 @@ if __name__ == '__main__':
     [col_dict, col_list] = sort_args(opts)
 
     if args.regs is None:
-        if args.ld_h is None:
-            data, data_exc1=run_LD(data)
         data = read_ifile(opts['ifile'], col_list, col_dict)
         chrm = verify_chr(data, args.chrm)
+        if args.ld_h is None:
+            data, data_exc1=run_LD(data,chrm)
         log_ob = Logger(addout + '.log')
         log_ob.log(DEFHEAD)
         run_steps(data)
