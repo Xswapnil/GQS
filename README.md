@@ -26,7 +26,7 @@ usage: GQSmain.py [-h] [--ifile IFILE] [--regs REGS] [--r2_th R2_TH] [--chrm CHR
 - Third column with End postion.
 
 Example should of locus region file
-
+```
 1  43979146   44508946
 2  200654071  201358071
 2  57892490   58879490
@@ -37,6 +37,7 @@ Example should of locus region file
 4  176668514  176789614
 4  24194810   24330510
 6  152997243  153102881
+```
 
 ```
 ../GQSmain.py --ifile small_daner --regs regions --pos_h BP --refG genome1000-EUR --snp_h SNP --pval_h P --chrm_h CHR --addout test_run_3
