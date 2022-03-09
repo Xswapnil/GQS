@@ -1,5 +1,5 @@
-plink_loc test
-genome1000-EUR_loc test
-genome1000-EAS_loc test
-HRC-EUR_loc test
-HRC-EAS_loc test
+plink_loc /test/plink/
+genome1000-EUR_loc /test/ref/genome1000/EUR/
+genome1000-EAS_loc /test/ref/genome1000/EAS/
+HRC-EUR_loc /test/ref/HRC/EUR/
+HRC-EAS_loc /test/ref/HRC/EAS/
